@@ -1,4 +1,4 @@
-# nmon nmonchart
+# nmon nmonchart centos 7
 
 
 ## install
@@ -19,9 +19,11 @@ which nmon
 
 crontab -e
 
+nmon <parameter> -m <path store location>
+
 0 0 * * * /usr/bin/sudo /bin/nmon -ft -s 120 -c 720 -m /home/docker/.nmon-data
 
-## generate htl report file
+## generate html report file
 
 /bin/bash nmonchart <nmonfile source> <html destination>
 

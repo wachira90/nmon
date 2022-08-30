@@ -33,8 +33,15 @@ nmon \<parameter> -m \<path store location>
 ````
 
 ## generate html report file
+
+### syntax
+
 ````
 /bin/bash nmonchart \<nmonfile source> \<html destination>
+````
 
+### example
+
+````
 sudo /bin/bash   /var/www/example.com/nchart/nmonchart   /home/docker/.nmon-data/host1_201213_0000.nmon    /var/www/example.com/nchart/host1_201213_0000.html
 ````
